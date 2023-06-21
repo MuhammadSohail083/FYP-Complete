@@ -46,6 +46,7 @@ const ShopCreate = () => {
       .catch((error) => {
         toast.error(error.response.data.message);
       });
+      window.location.href('/shop-login')
   };
 
   const handleFileInputChange = (e) => {

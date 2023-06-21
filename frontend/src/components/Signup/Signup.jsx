@@ -46,8 +46,10 @@ const Singup = () => {
         setAvatar();
       })
       .catch((error) => {
+        window.location.href('/login');
         toast.error(error.response.data.message);
       });
+      window.location.href('/login');
   };
 
   return (
